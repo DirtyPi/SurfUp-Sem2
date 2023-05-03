@@ -1,0 +1,15 @@
+C:\HRISTO TANCHEV\Fontaka\Sem2 T3\OOD_WAD\project-hristo-wad\WebApplication-WAD-Project\ClassLibraryService\bin\Release\net5.0\ClassLibraryService.deps.json
+C:\HRISTO TANCHEV\Fontaka\Sem2 T3\OOD_WAD\project-hristo-wad\WebApplication-WAD-Project\ClassLibraryService\bin\Release\net5.0\ClassLibraryService.dll
+C:\HRISTO TANCHEV\Fontaka\Sem2 T3\OOD_WAD\project-hristo-wad\WebApplication-WAD-Project\ClassLibraryService\bin\Release\net5.0\ref\ClassLibraryService.dll
+C:\HRISTO TANCHEV\Fontaka\Sem2 T3\OOD_WAD\project-hristo-wad\WebApplication-WAD-Project\ClassLibraryService\bin\Release\net5.0\ClassLibraryService.pdb
+C:\HRISTO TANCHEV\Fontaka\Sem2 T3\OOD_WAD\project-hristo-wad\WebApplication-WAD-Project\ClassLibraryService\bin\Release\net5.0\ClassLibrary.dll
+C:\HRISTO TANCHEV\Fontaka\Sem2 T3\OOD_WAD\project-hristo-wad\WebApplication-WAD-Project\ClassLibraryService\bin\Release\net5.0\ClassLibrary.pdb
+C:\HRISTO TANCHEV\Fontaka\Sem2 T3\OOD_WAD\project-hristo-wad\WebApplication-WAD-Project\ClassLibraryService\obj\Release\net5.0\ClassLibraryService.csprojAssemblyReference.cache
+C:\HRISTO TANCHEV\Fontaka\Sem2 T3\OOD_WAD\project-hristo-wad\WebApplication-WAD-Project\ClassLibraryService\obj\Release\net5.0\ClassLibraryService.GeneratedMSBuildEditorConfig.editorconfig
+C:\HRISTO TANCHEV\Fontaka\Sem2 T3\OOD_WAD\project-hristo-wad\WebApplication-WAD-Project\ClassLibraryService\obj\Release\net5.0\ClassLibraryService.AssemblyInfoInputs.cache
+C:\HRISTO TANCHEV\Fontaka\Sem2 T3\OOD_WAD\project-hristo-wad\WebApplication-WAD-Project\ClassLibraryService\obj\Release\net5.0\ClassLibraryService.AssemblyInfo.cs
+C:\HRISTO TANCHEV\Fontaka\Sem2 T3\OOD_WAD\project-hristo-wad\WebApplication-WAD-Project\ClassLibraryService\obj\Release\net5.0\ClassLibraryService.csproj.CoreCompileInputs.cache
+C:\HRISTO TANCHEV\Fontaka\Sem2 T3\OOD_WAD\project-hristo-wad\WebApplication-WAD-Project\ClassLibraryService\obj\Release\net5.0\ClassLibraryService.csproj.CopyComplete
+C:\HRISTO TANCHEV\Fontaka\Sem2 T3\OOD_WAD\project-hristo-wad\WebApplication-WAD-Project\ClassLibraryService\obj\Release\net5.0\ClassLibraryService.dll
+C:\HRISTO TANCHEV\Fontaka\Sem2 T3\OOD_WAD\project-hristo-wad\WebApplication-WAD-Project\ClassLibraryService\obj\Release\net5.0\ref\ClassLibraryService.dll
+C:\HRISTO TANCHEV\Fontaka\Sem2 T3\OOD_WAD\project-hristo-wad\WebApplication-WAD-Project\ClassLibraryService\obj\Release\net5.0\ClassLibraryService.pdb

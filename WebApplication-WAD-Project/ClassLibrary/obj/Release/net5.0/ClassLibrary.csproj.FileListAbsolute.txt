@@ -1,0 +1,12 @@
+C:\HRISTO TANCHEV\Fontaka\Sem2 T3\OOD_WAD\project-hristo-wad\WebApplication-WAD-Project\ClassLibrary\bin\Release\net5.0\ClassLibrary.deps.json
+C:\HRISTO TANCHEV\Fontaka\Sem2 T3\OOD_WAD\project-hristo-wad\WebApplication-WAD-Project\ClassLibrary\bin\Release\net5.0\ClassLibrary.dll
+C:\HRISTO TANCHEV\Fontaka\Sem2 T3\OOD_WAD\project-hristo-wad\WebApplication-WAD-Project\ClassLibrary\bin\Release\net5.0\ref\ClassLibrary.dll
+C:\HRISTO TANCHEV\Fontaka\Sem2 T3\OOD_WAD\project-hristo-wad\WebApplication-WAD-Project\ClassLibrary\bin\Release\net5.0\ClassLibrary.pdb
+C:\HRISTO TANCHEV\Fontaka\Sem2 T3\OOD_WAD\project-hristo-wad\WebApplication-WAD-Project\ClassLibrary\obj\Release\net5.0\ClassLibrary.csprojAssemblyReference.cache
+C:\HRISTO TANCHEV\Fontaka\Sem2 T3\OOD_WAD\project-hristo-wad\WebApplication-WAD-Project\ClassLibrary\obj\Release\net5.0\ClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\HRISTO TANCHEV\Fontaka\Sem2 T3\OOD_WAD\project-hristo-wad\WebApplication-WAD-Project\ClassLibrary\obj\Release\net5.0\ClassLibrary.AssemblyInfoInputs.cache
+C:\HRISTO TANCHEV\Fontaka\Sem2 T3\OOD_WAD\project-hristo-wad\WebApplication-WAD-Project\ClassLibrary\obj\Release\net5.0\ClassLibrary.AssemblyInfo.cs
+C:\HRISTO TANCHEV\Fontaka\Sem2 T3\OOD_WAD\project-hristo-wad\WebApplication-WAD-Project\ClassLibrary\obj\Release\net5.0\ClassLibrary.csproj.CoreCompileInputs.cache
+C:\HRISTO TANCHEV\Fontaka\Sem2 T3\OOD_WAD\project-hristo-wad\WebApplication-WAD-Project\ClassLibrary\obj\Release\net5.0\ClassLibrary.dll
+C:\HRISTO TANCHEV\Fontaka\Sem2 T3\OOD_WAD\project-hristo-wad\WebApplication-WAD-Project\ClassLibrary\obj\Release\net5.0\ref\ClassLibrary.dll
+C:\HRISTO TANCHEV\Fontaka\Sem2 T3\OOD_WAD\project-hristo-wad\WebApplication-WAD-Project\ClassLibrary\obj\Release\net5.0\ClassLibrary.pdb
