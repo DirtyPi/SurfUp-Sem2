@@ -1,0 +1,31 @@
+﻿@page
+@model WebApplication_WAD_Project.Pages.ProfileCardModel
+@{
+}
+
+
+< <div class="card">
+    <div class="card-header">
+        <img src="profilepics/profile-image-placeholder.jpg" alt="Profile Image" class="profile-img">
+    </div>
+    <br />
+    <div class="card-body">
+        <p class="name">@Model.Users.FirstName @Model.Users.LastName</p>
+        <a href="#" class="mail">@Model.Users.Email</a>
+        <p class="job">@Model.Users.Username</p>
+    </div>
+
+    <div class="social-links">
+
+    </div>
+
+    <div class="card-footer">
+        <p class="count">Commented posts:</p>
+    </div>
+    <br />
+    <br />
+    <div id="updbtn">
+        <a asp-page="/EditUserInfo" asp-route-ID="@Model.Users.Id"> <input type="submit" id="CommentBtn" value="Go to update profile page..."></a>
+    </div>
+</div>
+      

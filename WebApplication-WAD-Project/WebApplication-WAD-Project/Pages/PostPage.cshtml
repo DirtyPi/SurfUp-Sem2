@@ -1,0 +1,88 @@
+﻿@page "{id}"
+@model WebApplication_WAD_Project.Pages.PostPageModel
+@{ViewData["Title"] = "PostPage";
+}
+
+@if (Model.Post.TypeOfPost == ClassLibrary.TypeOfPostEnum.Annoucements)
+{
+    <div class="PostBoard">
+        <h2>@Model.APost.PostTitle</h2>
+
+        <div class="DescBox">
+            <p>@Model.APost.Description</p>
+        </div>
+        <p>Posted on: @Model.APost.PostedTime</p>
+        <p>Posted by: @Model.Post.PostedBy.Username</p>
+    </div>
+}
+else if (Model.Post.TypeOfPost == ClassLibrary.TypeOfPostEnum.MediaPosts)
+{
+    <div class="PostBoard">
+        <h2>@Model.Mpost.PostTitle</h2>
+        <div class="vidbox">
+            <video width="500" height="350" type="video/mp4" src="~/Vid/@Model.Mpost.Video" controls />
+        </div>
+        <p>Posted on: @Model.Mpost.PostedTime</p>
+        <p>Posted by: @Model.Post.PostedBy.Username</p>
+    </div>
+}
+else if (Model.Post.TypeOfPost == ClassLibrary.TypeOfPostEnum.ImagePosts)
+{
+<div class="PostBoard">
+    <h2>@Model.Ipost.PostTitle</h2>
+    <div class="vidbox">
+        <img width="500" height="350" src="~/images/@Model.Ipost.Image" />
+    </div>
+    <p>Posted on: @Model.Ipost.PostedTime</p>
+    <p>Posted by: @Model.Post.PostedBy.Username</p>
+</div>
+}
+<div class="InteractedUsers">
+    <div class="flexed"><div class="Comments"><p>Comments:@Model.Comments.Count</p></div></div>
+</div>
+<form class="UserInteraction" method="post">
+    <input type="hidden" asp-for="@Model.Post.PostId" id="PostID" runat="server" />
+    <input type="text" class="title" placeholder="Add a comment!" asp-for="Comment.CommentText" required />
+    <input type="submit" id="CommentBtn" value="Add Comment">
+    <p>@ViewData["Message"]</p>
+    <span asp-validation-for="Comment.CommentText"></span>
+</form>
+<div class="CommentSection">
+
+    @for (int i = 0; i <= Model.Comments.Count() - 1; i++)
+    {
+
+         var comment = Model.Comments[i];
+    <div class="comments">
+        <ul style="list-style-type: none;">
+            <li>
+                <img class="comment-profile-pic" src="profilepics/profile-image-placeholder.jpg" />
+                <div class="comment-user-name">
+                 
+                    @Html.DisplayFor(Comment => comment.UserId.Username)
+                </div>
+               
+                <div class="vjs-comment-list">
+                    @Html.DisplayFor(Comment => comment.CommentText)
+                </div>
+                <p>Posted: @Html.DisplayFor(Comment => comment.CommentedTime)</p>
+            </li>
+        </ul>
+        @if (comment.UserId.Id == Model.Users.Id)
+        {
+            <form method="post" asp-page-handler="Delete">
+                <input type="hidden" asp-for="@comment.Id" />
+                <button type="submit" class="noselect" id="delete"><span class='text'>Delete</span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" /></svg></span></button>
+            </form>
+        }
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </div>
+            }
+        </div>
+    
+

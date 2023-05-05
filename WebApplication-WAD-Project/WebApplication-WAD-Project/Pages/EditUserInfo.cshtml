@@ -1,0 +1,66 @@
+﻿@page "{id}"
+@model WebApplication_WAD_Project.Pages.EditUserInfoModel
+@{
+}
+@section scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<form class="Profile" action="" method="post">
+    <h2>Update User Credentials Page</h2>
+    <br />
+    <div id="">
+        <p class="label" asp-for="Users.Username">Username:</p><br />
+        <input type="text" id="updfield" asp-for="Users.Username" required /><br />
+    </div>
+    <br />
+    <div id="">
+        <p class="label" asp-for="Users.FirstName">FirstName:</p><br />
+        <input type="text" id="updfield" asp-for="Users.FirstName" required /><br />
+    </div>
+    <br />
+    <div class="">
+        <p class="label" asp-for="Users.LastName">LastName:</p><br />
+        <input type="text" id="updfield" asp-for="Users.LastName" required /><br />
+    </div>
+    <br />
+    <div id="">
+        <p class="label" asp-for="Users.Password">New Passoword:</p><br />
+        <input type="text" id="updfield" asp-for="Users.Password" required /><br />
+    </div>
+    <br />
+    <div id="">
+        <p class="label" asp-for="Users.Password">New Passoword:</p><br />
+        <input type="text" id="updfield" asp-for="Users.Password" required /><br />
+    </div>
+    <br />
+    <div id="welcome-image">
+        <img src="" alt="Upload photo">
+        
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <p></p>
+            <input type="submit" height="10px" width="40px" value="Upload Image" name="submit">
+            <p></p>
+       
+    </div>
+    <br />
+    <div id="">
+        <button type="submit" id="CommentBtn">Update Profile</button>
+    </div>
+
+    <p>@ViewData["Message"]</p>
+    <span asp-validation-for="Users.Username"></span>
+    <br />
+    <span asp-validation-for="Users.Password"></span>
+    <br />
+    <span asp-validation-for="Users.FirstName"></span>
+    <br />
+    <span asp-validation-for="Users.LastName "></span>
+
+    <input class="label" asp-for="Users.Id" type="hidden" /><br />
+    <input type="text" id="" asp-for="Users.Email" hidden /><br />
+    <input type="text" id="" asp-for="Users.Role" hidden /><br />
+    <input type="text" id="" asp-for="Users.Status" hidden /><br />
+    <input type="text" id="" asp-for="Users.Password" hidden /><br />
+
+</form>

@@ -1,0 +1,37 @@
+﻿@page
+@model WebApplication_WAD_Project.Pages.PostsHomePageModel
+@{ViewData["Title"] = "Home Page";
+}
+
+
+
+<form class="Dashboard" action="" method="get" >
+    <label for="postType">Sort by type:</label>
+    <select asp-for="postType">
+        <option value="0">All</option>
+        <option value="1">Media Posts</option>
+        <option value="2">Annoucements</option>
+        <option value="3">Image Posts</option>
+
+    </select>
+    <input type="submit" value="Search..." />
+    @foreach (var post in Model.posts)
+    {
+
+
+
+        <div class="Hcolumn">
+
+            <a asp-page="PostPage" asp-route-ID="@post.PostId"><h2>@Html.DisplayFor(Post => post.PostTitle)</h2> </a>
+            <p>@Html.DisplayFor(Post => post.PostedTime)</p>
+
+
+
+
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+    }
+</form>

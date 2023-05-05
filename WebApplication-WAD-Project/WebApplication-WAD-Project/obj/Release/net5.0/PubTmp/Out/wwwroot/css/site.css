@@ -1,0 +1,748 @@
+﻿ /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+* {
+    box-sizing: border-box;
+    /*footer perpos of existing*/
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    /*-----to here*/
+    
+}
+#main {
+    overflow: auto;
+    padding-bottom: 150px;
+}
+html{
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #19232d;
+    height: 100%; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: orange;
+    color: white;
+   /* position: fixed;
+    width: 100%;*/
+}
+.brand-title{
+    font-size:1.5rem;
+    margin: 0.5rem;
+}
+.navbar-links ul{
+    margin: 0 ;
+    padding: 0;
+    display: flex;
+}
+.navbar-links li{
+    list-style:none;
+}
+.navbar-links li a{
+    text-decoration:none;
+    color:white;
+    padding: 1rem;
+    display: block;
+}
+    .navbar-links li:hover {
+        background-color: #19232d;
+    }
+
+.toggle-button {
+    position: absolute;
+    top:.75rem;
+    right:1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height:21px;
+}
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color:white;
+    border-radius: 10px;
+
+}
+@media (max-width:400px){
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links{
+        display:none;
+    }
+    .navbar{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+    .navbar-links ul{
+        width:100%;
+        flex-direction: column;
+    }
+    navbar-links li{
+        text-align: center;
+    }
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+    navbar-links.active{
+        display:flex;
+    }
+}
+
+/*Footer-----------*/
+
+
+
+
+    /*----------------------------------------Log in -------------------------*/
+    .box {
+        width: 350px;
+        padding: 50px;
+        position: absolute;
+        top: 10%;
+        left: 40%;
+       
+        background: #34345e;
+        text-align: center;
+    }
+
+.box h1 {
+    color: white;
+    /*background: orange;
+    text-transform:uppercase;
+    font-weight: 500;*/
+    float: left;
+    font-size: 40px;
+    border-bottom: 6px solid orange;
+    margin-bottom: 50px;
+    padding: 13px 0;
+}
+    .box input[type="text"], .box input[type="password"] {
+        border: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid #3498db;
+        padding: 14px 10px;
+        width: 200px;
+        outline: none;
+        color: white;
+        border-radius: 24px;
+        transition: 0.25s;
+
+    }
+    .box input[type="text"]:focus, .box input[type="password"]:focus {
+    width: 280px;
+    border-color: orange;
+    }
+
+    .box input[type="submit"] {
+        border: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid orange;
+        padding: 14px 40px;
+        outline: none;
+        color: white;
+        border-radius: 24px;
+        transition: 0.25s;
+        cursor: pointer;
+    }
+
+        .box input[type="submit"]:hover {
+            background: #2ecc71;
+        }
+
+
+/*----------------------------------------------------------------------------Sign in------------------------------------------------------------------------------*/
+.boxSign {
+    width: 850px;
+    height: 400px;
+    padding: 55px;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    background: #34345e;
+    text-align: center;
+    align-content: center;
+    padding-bottom: 20px;
+}
+.MessageBox {
+    width: 850px;
+    height: 400px;
+    padding: 55px;
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    background: #34345e;
+    text-align: center;
+    align-content: center;
+    padding-bottom: 20px;
+}
+/*-------------------------------------flex stuff----------------------------*/
+.FlexGoingCrazy {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0px;
+    margin: 0;
+    list-style: none;
+}
+.flexitem {
+    order:2 ;
+    padding: 30px;
+    width: 200px;
+    height: 25px;
+    margin-top: 10px;
+    line-height: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
+
+    .boxSign h1 {
+        color: white;
+        /*background: orange;
+    text-transform:uppercase;
+    font-weight: 500;*/
+       float: left;
+        font-size: 40px;
+        border-bottom: 6px solid orange;
+        margin-bottom: 150px;
+        padding: 13px 0;
+    }
+.boxSign p {
+    font-size: 20px;
+    padding: 0 0; 
+}
+
+
+.boxSign input[type="text"], .boxSign input[type="password"], .boxSign input[type="email"], .boxSign input[type="date"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 10px 10px;
+    width: 160px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+        .boxSign input[type="text"]:focus, .boxSign input[type="password"]:focus, .boxSign input[type="email"]:focus, .boxSign input[type="date"]:focus {
+            width: 200px;
+            border-color: orange;
+        }
+
+    .boxSign input[type="submit"] {
+        border: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid orange;
+        padding: 14px 40px;
+        outline: none;
+        color: white;
+        border-radius: 24px;
+        transition: 0.25s;
+        cursor: pointer;
+    }
+
+        .boxSign input[type="submit"]:hover {
+            background: #2ecc71;
+        }
+ /*----------------------------------------------------------------Update Usere Form------------------------------------------------------------------------*/
+
+
+.UpdateInfo {
+    width: 350px;
+    padding: 50px;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+  
+    background: #34345e;
+    text-align: center;
+}
+
+    .UpdateInfo input[type="submit"] {
+       
+    }
+.UpdatePrf {
+    position: fixed;
+    bottom: 10%;
+    right: 3%;
+    background: orange;
+    width: 180px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 4px 4px 4px #0a78aa;
+    cursor: pointer;
+}
+
+    .UpdatePrf button {
+        color: #34345e;
+        background: orange;
+        border: none;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .UpdatePrf:active {
+        box-shadow: 0 0;
+    }
+
+
+
+
+#updfield {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+#welcome-image img {
+    margin: auto;
+    border-radius: 30px;
+    height: 190px;
+    width: 180px;
+}
+/*-----------------------------------------------------------HOME PAGE-------------------------------------------------------------*/
+.Dashboard {
+    width: 950px;
+    height: 700px;
+    padding: 50px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    background: white;
+    text-align: center;
+    /*flex*/
+    overflow: auto;
+}
+.Hcolumn {
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-family: Arial;
+}
+    .Hcolumn h2 {
+       
+    }
+    /*a:link a::after {
+        color: white;
+        font-family: Arial;
+        
+    }*/
+    .fixed-btn {
+        position: fixed;
+        bottom: 10%;
+        right: 3%;
+        background: orange;
+        width: 180px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        border-radius: 3px;
+        box-shadow: 4px 4px 4px #0a78aa;
+        cursor: pointer;
+    }
+
+    .fixed-btn button {
+        color: #34345e;
+        background: orange;
+        border: none;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .fixed-btn:active {
+        box-shadow: 0 0;
+    }
+
+    /*-------------------------------CREATING A POST-------------------------------------*/
+.Board {
+    width: 950px;
+    height: 500px;
+    padding: 50px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    background: #34345e;
+    text-align: center;
+}
+
+    .Board input[type="text"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    /*--------------------------------------POST PAGE---------------------------------------------------------------------*/
+
+.PostBoard {
+    width: 950px;
+    height: 550px;
+    padding: 50px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    background: #34345e;
+    text-align: center;
+}
+.PostBoard h2 {
+    padding: 10px;
+}
+.PostBoard textarea{
+    color:gray;
+}
+.InteractedUsers {
+    width: 950px;
+    height: 10px;
+    padding: 50px;
+    padding-bottom: 100px;
+    position: absolute;
+    top: 90%;
+    left: 20%;
+    background: #34345e;
+    text-align: center;
+    display: flex;
+}
+.flexed {
+    order: 2;
+    padding: 20px;
+    left:20%;
+   /* width: 200px;
+    height: 25px;*/
+    margin-top: 10px;
+    line-height: 50px;
+    color: white;
+    font-weight: bold;
+   color:orange;
+   
+    text-align: center;
+}
+.InteractedUsers button{
+    background: orange;
+}
+
+.UserInteraction {
+    width: 950px;
+    height: 50px;
+    padding: 50px;
+    padding-bottom: 100px;
+    position: absolute;
+    top: 120%;
+    left: 20%;
+    background: #34345e;
+    text-align: center;
+}
+
+
+.UserInteraction [type="text"] {
+        width: 70%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+}
+
+#CommentBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #34345e;
+    background-color: orange;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+    #CommentBtn:hover {
+        background-color: darkgoldenrod;
+    }
+
+    #CommentBtn:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+.CommentSection {
+    width: 1000px;
+    height: auto;
+   padding: 35px;
+    padding-bottom: 100px;
+    position: absolute;
+    top: 150%;
+    left: 18%;
+    background: #34345e;
+    text-align: center;
+}
+.CommentSection h4{
+    float: left;
+}
+.CommentSection p {
+    float:left;
+    padding: 1px;
+}
+/*-------------------------------------------------------------USER PROFILE PAGE----------------------------------------------------------------*/
+
+.Profile {
+    width: 950px;
+    height: 800px;
+    padding: 50px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    background: #34345e;
+    text-align: center;
+}
+
+.ProfilePic{
+    border:1px;
+
+}
+.Ucolumn {
+    float: left;
+}
+.deleteButton {
+    float: right;
+    padding:3px;
+}
+/*------------------------------------------------NEW USER Card PAGE-----------------------------------------*/
+
+.card {
+    max-width: 250px;
+    margin: 150px auto 0;
+    /*background-color: #42515a;*/
+    background-color: #19232d;
+    box-shadow: 0 10px 90px #00000024;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+    .card .card-header {
+        position: relative;
+        height: 48px;
+    }
+
+
+        .card .card-header .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 1000px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 8px solid orange;
+            box-shadow: 0 0 20px #00000033;
+        }
+
+            .card .card-header .profile-img:hover {
+                width: 180px;
+                height: 180px;
+                border: 8px solid orange;
+            }
+
+
+    .card .card-body {
+        padding: 10px 40px;
+    }
+
+        .card .card-body .name {
+            margin-top: 30px;
+            font-size: 22px;
+            font-weight: bold;
+            color: orange;
+        }
+
+            .card .card-body .name:hover {
+                margin-top: 30px;
+                font-size: 24px;
+                color: orange;
+            }
+
+        .card .card-body .mail {
+            font-size: 14px;
+            color: #c2bdbd;
+        }
+
+            .card .card-body .mail:hover {
+                font-size: 16px;
+                color: #ffffff;
+            }
+
+        .card .card-body .job {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+       
+    
+
+
+    .card .card-footer {
+        background-color: orange;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        padding: 20px 0 20px 0;
+    }
+
+        .card .card-footer .count {
+            font-size: 14px;
+        }
+
+
+@media screen and (max-width: 575px) {
+    .card {
+        width: 96%;
+    }
+
+        .card .card-body {
+            padding: 10px 20px;
+        }
+}
+
+/*------------------------------------------------------Delete comment button-------------------------*/
+/*https://codepen.io/chancesq/pen/PoZGZmR */
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#delete {
+    width: 110px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    background: #e62222;
+    float: right;
+    top: 0%;
+    
+}
+
+    #delete, #delete span {
+        transition: 200ms;
+    }
+
+        #delete .text {
+            transform: translateX(25px);
+            color: white;
+            font-weight: bold;
+        }
+
+        #delete .icon {
+            position: absolute;
+            border-left: 1px solid #c41b1b;
+            transform: translateX(75px);
+            height: 40px;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #delete svg {
+            width: 15px;
+            fill: #eee;
+        }
+
+        #delete:hover #delete {
+            background: #ff3636;
+        }
+
+        #delete:hover .text {
+            color: transparent;
+        }
+
+        #delete:hover .icon {
+            width: 110px;
+            border-left: none;
+            transform: translateX(0);
+        }
+
+        #delete:focus {
+            outline: none;
+        }
+        /*-----------------------------------------Comment section NEW-------------------------------------------------------------------------*/
+.vjs-comment-list {
+    list-style-type: none;
+    position: relative;
+    background: #7777b4;
+    font-size: 3;
+    position: relative;
+    max-width: 500px;
+    text-align: start;
+    -moz-user-select: text !important;
+    margin-bottom: 10px;
+    font-family: "Times New Roman", Times, Arial, sans-serif !important;
+    left: 30%;
+}
+
+.comment-user-name {
+    top: 0;
+    float:left;
+    left: 5px;
+    font-size: 10;
+    width:auto;
+    font-family: "Times New Roman", Times, Arial, sans-serif !important;
+    padding: 2px;
+}
+
+.comment-profile-pic {
+    top: 0;
+    /*left: */
+    float: left;
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    /*  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAJdEVYdENvbW1lbnQAKlKRRNAAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuNWWFMmUAAAK3SURBVFhH3ZgJb9pAEIX5/3+rIQlRSSA0DS6HD4wxxgZjbrBNJ8m2QUOzzHNKhfr0JCQ0xyfbu+tx6eqreVH+f4Gu762G4Zm90B8lrj8pVy0WIPRngW4erB/WaBzP0yzb/1L1W4+FyV0c6K7u9P04TVNFcaCOE345ihe6CBDdDtON0vT9khzLD6Z0E1mixDBQpW5PZ0vVVqtkvrqr2yz9pDGgm5q9WG1UQ4Eo+PYBY8KA/DBRrcQaBAkrojcAVKnZWZ6rPmJRym0NuEgA0HPHV01AfW/7rJTGABBteqoDqG4vYqU0BoCcwVh1AOV4E1ZKYwTIm6gOoBwvZqU0BoAsN1IdQFEiK6UxANR2RqoDqLYTsFIaA0BGd6g6gDK65wF6ahVb9vlTa8BKaQwAmW7BZW+eY9nTbpvv4W36TZQo36yBK7T706uPRLs0u6ryah8ZAEpmK9UB1HS+ZKU0BoCG4Ux1ADUMgQMfAGpZwcvzgKtljVgpjQEg8iQRvSseKk4WrIjeGJDjweer7Y1ZEb0xoMemp/qI9Wh4rIjeGBDNG5vtTrUSiIKvxQv+zRgQ2e4DZ77dx+4XGQaiaUs4eFBYgdEMBiIPglj11IrCWKLERYCCSLRDUhhLlLgIUCzbjSiMJUpcBGi12aqeWq3WW5YoMQzUsUe5bFykMApm6SeNAZXvTWh4zfLsvPtQ7bmvWkmVUworojcG5PqiBX8odwBMiWQpEB1J4+lCNQE1jheULvymdgKIDq9mZ5jMC74rHoqKUKnyqUfqQ6BK3TbdaL0BjlKJ1pstDbKVusPa/fYRUNVsGB5tsgU+BcmVZXkQJQ1jcPzy/w5Ek0q3Fy2RL3afF7Xr9sLDIekF6LZu0/I5/ND8j0WtCaDyilVqdvzdruDA9XdFGPTUl2iHV39chkrq92J0YUD7/U+iVfd1XLZ9HgAAAABJRU5ErkJggg==);
+*/
+}
+.comments {
+    border-bottom:  solid orange;
+    padding:3px;
+}

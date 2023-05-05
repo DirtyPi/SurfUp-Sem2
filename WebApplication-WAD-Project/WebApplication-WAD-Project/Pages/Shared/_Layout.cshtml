@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebApplication_WAD_Project</title>
+    <link href='css/site.css?v=@Guid.NewGuid().ToString()' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <nav class="navbar">
+            <div class="brand-title">Solid Surf</div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+
+                    @if (!User.Identity.IsAuthenticated)
+                    {
+
+                        <li><a asp-page="/LogIn">Log In</a></li>
+                        <li><a asp-page="/SignIn">Sign up</a></li>
+                    }
+                    else
+                    {
+                        if (User.IsInRole("AdminUser"))
+                        {
+                            <li><a asp-page="/AdminPage">Admin</a></li>
+                        }
+                        <li><a asp-page="/PostsHomePage">Home Page</a></li>                     
+                        <li><a asp-page="/ProfileCard">User Profile</a></li>
+                        <li><a asp-page="/LogOut">Logout</a></li>
+                    }
+
+
+
+                </ul>
+            </div>
+        </nav>
+
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

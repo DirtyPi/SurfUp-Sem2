@@ -1,0 +1,69 @@
+﻿@page
+@model WebApplication_WAD_Project.Pages.SignInModel
+@{
+    ViewBag.Title = "Users";
+    ViewData["Title"] = "Register";
+}
+
+
+
+<form class="boxSign" action="" method="post">
+    <div class=""><h1>Sign in</h1></div>
+    <div class="FlexGoingCrazy">
+
+        <div class="flexitem">
+
+          
+            <input placeholder="Username" asp-for="users.Username" />
+        </div>
+
+        <div class="flexitem">
+          
+            <input placeholder="Password" asp-for="users.Password" />
+        </div>
+
+        <div class="flexitem">
+        
+            <input placeholder="Confirm password" asp-for="users.Password" />
+        </div>
+
+        <div class="flexitem">
+           
+            <input placeholder="Email" asp-for="users.Email" />
+        </div>
+
+
+        <div class="flexitem">
+          
+            <input placeholder="First Name" asp-for="users.FirstName" />
+        </div>
+
+        <div class="flexitem">
+
+            <input placeholder="Last Name" asp-for="users.LastName">
+        </div>
+
+
+    </div>
+    <div class="flexitem">
+        <input type="submit" name="" value="Sign in" />
+    </div>
+
+
+</form>
+<div class="MessageBox">
+    <br /><br /><br />
+    <p> @ViewData["Message"] </p>
+    <span asp-validation-for="users.Username"></span>
+    <br />
+    <span asp-validation-for="users.Password"></span>
+    <br />
+    <span asp-validation-for="users.Password"></span>
+    <br />
+    <span asp-validation-for="users.Email"></span>
+    <br />
+    <span asp-validation-for="users.FirstName"></span>
+    <br />
+    <span asp-validation-for="users.LastName "></span>
+    <br />
+</div>

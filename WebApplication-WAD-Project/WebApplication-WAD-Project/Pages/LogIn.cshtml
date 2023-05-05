@@ -1,0 +1,20 @@
+﻿@page
+@model WebApplication_WAD_Project.Pages.Shared.LogInModel
+@{ViewData["Title"] = "Login";
+}
+@section scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<form class="box" method="post">
+    <h1>Log in</h1>
+    <span asp-validation-for="Email"></span>
+    <input type="text" asp-for="Email" value="" placeholder="Email" />
+    <span asp-validation-for="Password"></span>
+    <input type="password" asp-for="Password" value="" placeholder="Password" />
+    <input type="submit" name="" value="Login" />
+    <p>-------------Or-------------</p>
+    <a sp-area="" asp-page="signin">Sign in</a>
+    <div>@ViewData["Message"]</div>
+</form>
+
